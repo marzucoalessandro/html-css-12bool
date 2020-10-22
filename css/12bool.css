@@ -6,6 +6,13 @@ body [class*="col-"] {
   border: 1px solid black;
 }
 
+body [class*="nest-"] {
+  height: 150px;
+  background-color: #ff5fda;
+  border: 1px solid white;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,13 +24,13 @@ body [class*="col-"] {
   margin: 0 auto;
 }
 
-.container::after {
+.container, [class*="col-"]::after {
   content: "";
   display: table;
   clear: both;
 }
 
-[class*="col-"] {
+[class*="col-"], [class*="nest-"] {
   float: left;
 }
 
@@ -75,4 +82,23 @@ body [class*="col-"] {
 
 .col-12{
   width: calc((100% / 12) * 12)
+}
+
+/* creiamo ulteriori classi per suddividere ancora il layout */
+.nest-2{
+  width: calc((100% / 24) * 4)
+}
+
+.nest-6{
+  width: calc((100% / 24) * 12)
+}
+
+.nest-8{
+  width: calc((100% / 24) * 16)
+}
+
+/* creiamo una utility class per dare il padding dove richiesto */
+
+.pd-5{
+  padding: 5px;
 }
