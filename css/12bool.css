@@ -7,7 +7,7 @@ body [class*="col-"] {
 }
 
 body [class*="nest-"] {
-  height: 140px; 
+  height: 100%; 
   background-color: #ff5fda;
   border: 1px solid white;
 }
