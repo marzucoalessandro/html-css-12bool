@@ -1,7 +1,7 @@
 /* regole generali del ns framework */
 
 body [class*="col-"] {
-  height: 200px;
+  height: 150px;
   background-color: pink;
   border: 1px solid black;
 }
