@@ -1,3 +1,5 @@
+/* regole generali del ns framework */
+
 body [class*="col-"] {
   height: 200px;
   background-color: pink;
